@@ -6,11 +6,11 @@ export default function Main() {
     useEffect(() => {
         async function load(){
             const response = await api.get('/products');
-            console.log(response);
+            console.log(response.data);
         }
         load()
     }, []);
     
     
-    return (<h1>Hello Rocketseat</h1>)
+    return (<h1>Testando o Commit</h1>)
 }
